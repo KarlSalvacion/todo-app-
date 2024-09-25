@@ -1,0 +1,177 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(215, 177, 38); /* yellow background color */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -30px;
+  padding: 10px; 
+  position: relative;
+  width: 440px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: background-color 0.3s;
+}
+
+.todo-item.completed {
+
+  background-color: rgb(44, 43, 43);
+}
+
+.todo-item.completed .removeBtn {
+  cursor: pointer;
+  background-color: rgb(215, 177, 38);
+  height: 45px;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-right: -10px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 100px;
+  transition: 0.5s;
+}
+
+.todo-item.completed .removeBtn:hover {
+  cursor: pointer;
+  background-color: rgb(147, 28, 28);
+  color: #CCCCCC;
+  font-weight: 700;
+  width: 110px;
+
+}
+
+.todo-item.completed .editBtn {
+  display: none;
+}
+
+.editTextBar {
+  color: #ccc;
+  background-color: rgb(29, 28, 28);
+  border: 2px  solid rgb(215, 177, 38);
+  margin-top: -10px;
+  margin-bottom: -20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  height: 45px;
+  width: 340px;
+  outline: none;
+  padding: 10px;
+}
+
+
+.saveBtn {
+  height: 45px;
+  width: 100px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  border: none;
+  padding: 5px 10px;
+  margin-left: -10px;
+  font-weight: 600;
+  transition: 0.3s;
+  color: #000;
+}
+
+.saveBtn:hover {
+  border: 2px solid rgb(215, 177, 38);
+  background-color: rgb(29, 28, 28) !important;
+  font-weight: 700;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  color: rgb(215, 177, 38) ;
+}
+
+
+.todo-text {
+  flex-basis: 0;
+  flex-grow: 1;
+  word-break: break-word;
+}
+
+.circle-button {
+  border: none;
+  background-color: #CCCCCC;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: 0.5s;
+}
+
+.circle-button:hover {
+
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+}
+
+.circle-button.checked {
+  background-color: rgb(57, 149, 90);
+}
+
+.editBtn {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 10px;
+  transition: 0.3s;
+  border: 2px solid rgb(215, 177, 38);
+}
+
+.editBtn:hover {
+  height: 45px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 10px;
+  font-weight: 700;
+  padding: 10px;
+  color: rgb(215, 177, 38);
+  background-color: #495ed4;
+}
+
+.removeBtn {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 10px;
+  margin-right: -10px;
+  transition: 0.3s;
+  border: 2px solid rgb(215, 177, 38);
+}
+
+.removeBtn:hover {
+  height: 45px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  margin-left: 10px;
+  margin-right: -10px;
+  font-weight: 700;
+  padding: 10px;
+  color: rgb(215, 177, 38);
+  background-color: rgb(147, 28, 28);
+}
+
+.todo-actions {
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.todo-actions button {
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.todo-actions button svg {
+  font-size: 18px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #666666;
+}
