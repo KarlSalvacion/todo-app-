@@ -1,0 +1,90 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoTitle {
+  font-family: "Lexend";
+  color: #ededed;
+  font-size: 45px;
+  margin-top: -5px;
+}
+
+.todo-list-container {
+  margin: 0 auto; 
+  background-color: rgb(29, 28, 28);
+  padding: 20px;
+  position: absolute;
+  top: -540px;
+  z-index: 1;
+  width: 500px;
+  overflow-y: auto; 
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  max-height: 70vh;
+  font-family: "Poppins";
+  box-shadow: 0 10px 1000px rgba(253, 222, 20, 0.121);
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: block;
+  margin-bottom: auto;
+}
+
+.todoTextBot {
+  margin-top: 5px;
+  color: #cfcfcf;
+}
+
+.todoBar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  height: 45px;
+  margin-right: -100px;
+  border: 2px solid rgb(215, 177, 38);
+  background-color: transparent;
+  transition: 0.3s;
+  color: #ccc;
+}
+
+.todoBar:focus {
+  outline: 0px;
+  color: #ccc;
+}
+
+.add-todo {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+}
+
+.addTodoBtn {
+  height: 45px;
+  border: 2px solid rgb(215, 177, 38);
+  width: 100px;
+  color: #19191a;
+  font-weight: 600;
+  background-color: rgb(215, 177, 38);
+  transition: 0.3s;
+}
+
+.addTodoBtn:hover {
+  font-weight: 700 !important;
+  width: 110px;
+  padding: 10px;
+  color: rgb(215, 177, 38);
+  background-color: #19191a;
+
+}
