@@ -14,8 +14,8 @@ function TodoItem({ todo, updateTodo, removeTodo }) {
     if (todoItem) {
       todoItem.classList.add('isEditing');
       const completeButton = todoItem.querySelector('.circle-button');
-      completeButton.disabled = true; // disable the complete button
-      completeButton.style.display = 'none'; // hide the complete button
+      completeButton.disabled = true; 
+      completeButton.style.display = 'none'; 
     }
   };
   
@@ -25,8 +25,8 @@ function TodoItem({ todo, updateTodo, removeTodo }) {
     if (todoItem) {
       todoItem.classList.remove('isEditing');
       const completeButton = todoItem.querySelector('.circle-button');
-      completeButton.disabled = false; // enable the complete button
-      completeButton.style.display = 'block'; // show the complete button
+      completeButton.disabled = false; 
+      completeButton.style.display = 'block'; 
     }
   };
 
@@ -35,8 +35,8 @@ function TodoItem({ todo, updateTodo, removeTodo }) {
       <button
         className={`circle-button ${todo.isComplete ? "checked" : ""}`}
         onClick={handleComplete}
-        disabled={todo.isEditing} // add this line
-        style={{ display: todo.isEditing ? 'none' : 'block' }} // add this line
+        disabled={todo.isEditing}
+        style={{ display: todo.isEditing ? 'none' : 'block' }} 
       >
       </button>
       <div className="todo-text">
